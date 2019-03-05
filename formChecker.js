@@ -17,7 +17,6 @@ function testFunc()
   else
   {
     return false;
-    console.log("false");
   }
 
 
