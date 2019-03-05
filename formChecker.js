@@ -9,7 +9,16 @@ function testFunc()
   let email = ValidateMail(document.getElementById("userName").value);
   let password = document.getElementById("passwordText").value;
 
-  
+  //check if everything it true
+  if (gelatoQ && sigfoxQ && bookQ && bookQ && shipMethod && email && password)
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+    console.log("false");
+  }
 
 
   function getRadioVal()
@@ -63,7 +72,7 @@ function ValidateEmail(mail)
 {
  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
   {
-    return (true)
+    return (true);
   }
-    return (false)
+    return (false);
 }
