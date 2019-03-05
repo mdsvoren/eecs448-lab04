@@ -3,7 +3,8 @@
     <h1>Caesar's Shops</h1>
 
 <meta charset="utf-8"/>
-<script src="formChecker.js"></script>
+<script type="text/javascript" src="formChecker.js"></script>
+
 </head>
 
     <h3>
@@ -12,37 +13,36 @@
 
 
 <form onsubmit="return testFunc();">
-  <script>
-  console.log("hello")
-  </script>
-1 pound of Imported Gelato ($12.00):<input type="text" name="gelatoQ" value="0" id="q1">
+ 
+
+
+1 pound of Imported Gelato ($12.00):<input type="text" name="gelatoQ" value="0" id="gelato">
 <br>
 <br>
-Louis Vutton Sigfox Luggage Tracker ($293.99):<input type="text" name="sigfoxQ" value="0">
+Louis Vutton Sigfox Luggage Tracker ($293.99):<input type="text" name="sigfoxQ" value="0" id="sigfox">
 <br>
 <br>
-Modernist Cuisine Book ($124.99):<input type="text" name="bookQ" value="0">
+Modernist Cuisine Book ($124.99):<input type="text" name="bookQ" value="0" id="book">
 <br>
 <br>
-<!--<h3>
+<h3>
     Choose Shipping
 </h3>
-<input type="radio" name="shipping" value="week">7-Day ($0.00)<br>
-<input type="radio" name="shipping" value="AOL">3-Day ($5.00)<br>
-<input type="radio" name="shipping" value="overnight">Overnight ($50.00)<br>
+<input type="radio" name="shipping" value="week" id="ship1">7-Day ($0.00)<br>
+<input type="radio" name="shipping" value="severalDays" id="ship2">3-Day ($5.00)<br>
+<input type="radio" name="shipping" value="overnight" id="ship3">Overnight ($50.00)<br>
 <br>
 
 <h3>
     User Information
 </h3>
 
-User Name (email):<input type="text" name="userName">
+User Name (email):<input type="text" name="userName" id="userName">
 <br>
 <br>
-Password:<input type="password" name="password">
+Password:<input type="password" name="password" id="passwordText">
 <br>
 <br>
--->
 
 <input type="submit" value="Submit">
 </form>
