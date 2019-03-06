@@ -14,12 +14,12 @@ if($q1Answer == WorldWideWeb)
   $numCorrect++;
 
 }
-if($q2Answer == MasaSon)
+if($q2Answer == "Masa Son")
 {
   $numCorrect++;
 
 }
-if($q3Answer == a35k)
+if($q3Answer == "$35k")
 {
   $numCorrect++;
 
