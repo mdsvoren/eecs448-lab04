@@ -8,12 +8,13 @@
 
 </head>
 
+<body onload="document.form1.reset();">
     <h3>
         Enter the desired quantity of each item below (0 or greater).
     </h3>
 
 
-<form  onsubmit="return testFunc();" action="customerBackend.php" method="post">
+<form  onsubmit="return testFunc();" action="customerBackend.php" method="post" name="form1">
 <img style="float: right; margin: 0px 0px 14px 14px;" src="caesarShops.jpg" width="700" length="500"/>
 
 1 pound of Imported Gelato ($12.00):<input type="text" name="gelatoQ" value="0" id="gelato">
@@ -37,17 +38,21 @@ Modernist Cuisine Book ($124.99):<input type="text" name="bookQ" value="0" id="b
     User Information
 </h3>
 
-User Name (email):<input type="text" name="userName" id="userName">
+User Name (email):<input type="text" name="userName" id="userName" value="">
 <br>
 <br>
-Password:<input type="password" name="password" id="passwordText">
+Password:<input type="password" name="password" id="passwordText" value="">
 <br>
 <br>
 
 <input type="submit" value="Submit">
+
 </form>
 
-
+<form action="customerFrontEnd.html">
+  <input type="submit" value="Reset">
+</form>
+</body>
 
 
 </html>

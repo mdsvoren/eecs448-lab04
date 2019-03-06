@@ -1,3 +1,4 @@
+<style> <?php include 'style.css'; ?> </style>
 <?php
 
 //get data from submit
@@ -34,10 +35,12 @@ $totalCost = $gelatoPrice + $sigfoxPrice + $bookPrice + $shipPrice;
 
 
 echo "<h1>Welcome User</h1>";
+echo"<h3>";
 echo "Email: ";
 echo "$userName<br>";
-echo "Password here: ";
+echo "Password: ";
 echo "$password<br><br>";
+echo"</h3>";
 
 echo"<table border='1'>";
 echo "<tr><th>Item</th><th>Quantity</th><th>Cost per Item</th><th>Subtotal</th></tr>";
